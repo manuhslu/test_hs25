@@ -1,94 +1,102 @@
 ###############################################################
-# 📘 HSLU DIGITAL CONSTRUCTION - SETUP & GIT ANLEITUNG
+# 🎓 HSLU DIGITAL CONSTRUCTION - PYTHON & GITHUB GUIDE
 # Projekt: DT_Programmieren
 # Umgebung: myenv
 # Autor: manuhslu
 ###############################################################
 
+
 🧩 1️⃣  VIRTUELLE UMGEBUNG (myenv)
 ----------------------------------
-# Erstellen (nur einmal nötig)
-python -m venv myenv
+⚙️ Erstellen (nur einmal nötig)
+> python -m venv myenv
 
-# Aktivieren (Windows)
-myenv\Scripts\activate
+🚀 Aktivieren (Windows)
+> myenv\Scripts\activate
 
-# Deaktivieren
-deactivate
+⏹️ Deaktivieren
+> myenv\Scripts\deactivate.bat
 
-# Kontrolle:
-where python
-pip show streamlit
+🔍 Kontrolle:
+> where python
+> pip show streamlit
+
+💡 Wenn "(myenv)" vor der Befehlszeile steht, ist deine Umgebung aktiv.
 
 
 📦 2️⃣  MODULE INSTALLIEREN
 ---------------------------
-pip install streamlit
-pip install pandas
-pip install matplotlib
-pip install ifcopenshell
-pip install customtkinter
+📦 Installiere die wichtigsten Bibliotheken:
+> pip install streamlit
+> pip install pandas
+> pip install matplotlib
+> pip install ifcopenshell
+> pip install customtkinter
 
-# Umgebung sichern:
-pip freeze > requirements.txt
+🧾 Umgebung speichern:
+> pip freeze > requirements.txt
+
+💡 Die Datei "requirements.txt" dokumentiert alle installierten Pakete.
 
 
 🚀 3️⃣  STREAMLIT STARTEN
 --------------------------
-python -m streamlit run xyz.py
+▶️ App starten:
+> python -m streamlit run xyz.py
 
-# Beenden:
-Ctrl + C
+⏹️ Beenden:
+> Ctrl + C
+
+💡 Wenn sich dein Browser öffnet (http://localhost:8501), läuft Streamlit korrekt.
 
 
 🔄 4️⃣  GITHUB WORKFLOW
 -----------------------
-# Status prüfen
-git status
+🔍 Status prüfen:
+> git status
 
-# Alle Änderungen hinzufügen
-git add .
+🟩 Neue Dateien hinzufügen:
+> git add .
 
-# Commit (Beschreibung hinzufügen)
-git commit -m "Update Projekt"
+💬 Änderungen committen:
+> git commit -m "Update Projekt"
 
-# Änderungen hochladen
-git push
+☁️ Änderungen zu GitHub hochladen:
+> git push
 
-# Neueste Version von GitHub holen
-git pull origin main
+⬇️ Neueste Version von GitHub laden:
+> git pull origin main
 
 
 ⚙️ 5️⃣  SCHNELLE AUTOMATION
 ----------------------------
-# Alles automatisch hochladen:
-git add . && git commit -m "Auto-Upload" && git push
+⚡ Alles automatisch hochladen:
+> git add . && git commit -m "Auto-Upload" && git push
 
-# Alle Pakete in Datei speichern:
-pip freeze > requirements.txt
+📦 Alle Pakete sichern:
+> pip freeze > requirements.txt
 
 
 🧱 6️⃣  GIT STATUS-ANZEIGEN IN VS CODE
 --------------------------------------
-🟩 Grün   = neue Datei (U)
-🟠 Orange = geändert (M)
-⚪ Weiß   = unverändert
-⚫ Grau   = ignoriert (z. B. myenv)
+📁 Farben im Explorer:
 
-# myenv ignorieren (.gitignore)
-myenv/
-__pycache__/
-.vscode/
-*.log
-*.tmp
+🟩 Grün   → Neue Datei (Untracked)
+🟠 Orange → Geändert (Modified)
+⚪ Weiß   → Unverändert
+⚫ Grau   → Ignoriert (z. B. myenv, __pycache__)
+
+🔠 Buchstaben im Explorer:
+U = Untracked (neu)
+M = Modified (geändert)
+A = Added (hinzugefügt)
+D = Deleted (gelöscht)
+
+💡 Vorgehen:
+1️⃣ „U“ oder „M“ prüfen  
+2️⃣ `git add .` ausführen  
+3️⃣ `git commit -m "Beschreibung"`  
+4️⃣ `git push`
 
 
-📘 7️⃣  TIPP:
--------------
-• VS Code regelmäßig speichern (Ctrl + S)
-• Vor dem Schließen „deactivate“ ausführen
-• Regelmäßig git push, um alles zu sichern
-
-###############################################################
-# ENDE DER ANLEITUNG
-###############################################################
+�
