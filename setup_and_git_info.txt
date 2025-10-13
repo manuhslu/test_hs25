@@ -1,0 +1,94 @@
+###############################################################
+# 📘 HSLU DIGITAL CONSTRUCTION - SETUP & GIT ANLEITUNG
+# Projekt: DT_Programmieren
+# Umgebung: myenv
+# Autor: manuhslu
+###############################################################
+
+🧩 1️⃣  VIRTUELLE UMGEBUNG (myenv)
+----------------------------------
+# Erstellen (nur einmal nötig)
+python -m venv myenv
+
+# Aktivieren (Windows)
+myenv\Scripts\activate
+
+# Deaktivieren
+deactivate
+
+# Kontrolle:
+where python
+pip show streamlit
+
+
+📦 2️⃣  MODULE INSTALLIEREN
+---------------------------
+pip install streamlit
+pip install pandas
+pip install matplotlib
+pip install ifcopenshell
+pip install customtkinter
+
+# Umgebung sichern:
+pip freeze > requirements.txt
+
+
+🚀 3️⃣  STREAMLIT STARTEN
+--------------------------
+python -m streamlit run xyz.py
+
+# Beenden:
+Ctrl + C
+
+
+🔄 4️⃣  GITHUB WORKFLOW
+-----------------------
+# Status prüfen
+git status
+
+# Alle Änderungen hinzufügen
+git add .
+
+# Commit (Beschreibung hinzufügen)
+git commit -m "Update Projekt"
+
+# Änderungen hochladen
+git push
+
+# Neueste Version von GitHub holen
+git pull origin main
+
+
+⚙️ 5️⃣  SCHNELLE AUTOMATION
+----------------------------
+# Alles automatisch hochladen:
+git add . && git commit -m "Auto-Upload" && git push
+
+# Alle Pakete in Datei speichern:
+pip freeze > requirements.txt
+
+
+🧱 6️⃣  GIT STATUS-ANZEIGEN IN VS CODE
+--------------------------------------
+🟩 Grün   = neue Datei (U)
+🟠 Orange = geändert (M)
+⚪ Weiß   = unverändert
+⚫ Grau   = ignoriert (z. B. myenv)
+
+# myenv ignorieren (.gitignore)
+myenv/
+__pycache__/
+.vscode/
+*.log
+*.tmp
+
+
+📘 7️⃣  TIPP:
+-------------
+• VS Code regelmäßig speichern (Ctrl + S)
+• Vor dem Schließen „deactivate“ ausführen
+• Regelmäßig git push, um alles zu sichern
+
+###############################################################
+# ENDE DER ANLEITUNG
+###############################################################
